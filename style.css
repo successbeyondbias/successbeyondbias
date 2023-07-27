@@ -1,0 +1,283 @@
+/* Global Styles */
+body {
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url("white.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Button Styles */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the Welcome Section */
+.welcome-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; /* Add some space between sections */
+}
+
+.welcome-content img {
+    max-width: 600px; /* Adjust the width as needed */
+    max-height: 400px; /* Adjust the height as needed */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the image */
+}
+
+.welcome-content .text-container {
+    flex: 1;
+    padding: 30px; /* Add more padding to the text container */
+    border-radius: 10px; /* Rounded corners for the text container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the text container */
+}
+
+.welcome-content p {
+    margin-bottom: 15px; /* Add some space between paragraphs */
+}
+
+/* Improved text layout */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .welcome-content {
+        flex-direction: column;
+    }
+
+    .welcome-content img {
+        max-width: 100%; /* Adjust image width to fit smaller screens */
+        max-height: auto; /* Allow image height to adjust proportionally */
+        margin-right: 0; /* Remove margin for smaller screens */
+        margin-bottom: 20px; /* Add space between image and text for smaller screens */
+    }
+}
+
+/* Add a class to target the featured image */
+.featured-image {
+    max-width: 400px; /* Adjust the desired maximum width for the image */
+    width: 100%; /* Ensure the image scales properly */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    border-radius: 10px; /* This will create rounded corners with a 10px radius */
+}
+
+section {
+    text-align: left;
+}
+
+/* Add margin to the iframe to move it down */
+iframe {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.smaller-image {
+    max-width: 335px; /* Adjust the desired maximum width for the image */
+    width: 100%; /* Ensure the image scales properly */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    border-radius: 10px; /* This will create rounded corners with a 10px radius */
+    margin-left: 20px; /* Add margin to move the image to the right */
+}
+
+/* Custom styles for the form */
+form {
+    max-width: 1000px; /* Adjust the maximum width to make the form wider */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    /* Add left margin to move the form to the left */
+    margin-left: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.project-carousel {
+    display: flex;
+    overflow: hidden;
+    max-width: 600px; /* Adjust the desired maximum width for the carousel */
+    margin: 0 auto;
+}
+
+.project-carousel img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+/* Add styles for the Featured Projects Carousel */
+.project-carousel {
+    max-width: 600px; /* Adjust the desired maximum width for the carousel */
+    margin: 0 auto;
+    position: relative;
+}
+
+.project-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-navigation button {
+    font-size: 20px;
+    background: black; /* Change the button background color to black */
+    color: white; /* Change the button text color to white */
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.carousel-navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
+}
+
+/* Optional: Add some space between the images */
+.project-carousel img {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
